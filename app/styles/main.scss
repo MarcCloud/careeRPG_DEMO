@@ -1,0 +1,57 @@
+// bower:scss
+// endbower
+@import 'animations';
+body  {
+	background-color: #2F445A;
+	color : #86C9D0;
+}
+
+ul{
+	list-style:none;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#appContainer{
+	margin :15px auto;
+	#careerTree {
+		height: 25em;
+		overflow-y:scroll;
+		animation : enterLeft 1s;
+
+		.rankList{
+			animation : appear 1.5s;
+			animation-delay : 1s;
+		}
+
+		li.rank{
+			width:5em;
+			height:5em;
+			text-align:center;
+			margin:5px;
+		}
+		li.console:hover{
+			box-shadow: 1px 1px 15px #86C9D0;
+		}
+
+	}
+	#profile{
+		animation: enterLeft 1s;
+		min-height: 10em;
+	}
+	#achievements{
+		animation: enterLeft 1s;
+		animation-delay : 0.5s;
+		min-height: 15em;
+	}
+	#stats{
+		min-height: 30em;
+		animation : enterLeft 1s;
+	}
+
+	.console{
+		border : 2px solid #86C9D0;
+		border-radius:4px;
+	}
+}

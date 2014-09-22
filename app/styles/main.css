@@ -1,0 +1,74 @@
+@-webkit-keyframes enterLeft {
+  0% {
+    width: 0%; }
+
+  100% {
+    width: 100%; } }
+
+@keyframes enterLeft {
+  0% {
+    width: 0%; }
+
+  100% {
+    width: 100%; } }
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@keyframes appear {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+body {
+  background-color: #2F445A;
+  color: #86C9D0; }
+
+ul {
+  list-style: none; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+#appContainer {
+  margin: 15px auto; }
+  #appContainer #careerTree {
+    height: 25em;
+    overflow-y: scroll;
+    -webkit-animation: enterLeft 1s;
+    animation: enterLeft 1s; }
+    #appContainer #careerTree .rankList {
+      -webkit-animation: appear 1.5s;
+      animation: appear 1.5s;
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s; }
+    #appContainer #careerTree li.rank {
+      width: 5em;
+      height: 5em;
+      text-align: center;
+      margin: 5px; }
+    #appContainer #careerTree li.console:hover {
+      box-shadow: 1px 1px 15px #86C9D0; }
+  #appContainer #profile {
+    -webkit-animation: enterLeft 1s;
+    animation: enterLeft 1s;
+    min-height: 10em; }
+  #appContainer #achievements {
+    -webkit-animation: enterLeft 1s;
+    animation: enterLeft 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    min-height: 15em; }
+  #appContainer #stats {
+    min-height: 30em;
+    -webkit-animation: enterLeft 1s;
+    animation: enterLeft 1s; }
+  #appContainer .console {
+    border: 2px solid #86C9D0;
+    border-radius: 4px; }
