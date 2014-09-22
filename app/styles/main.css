@@ -72,3 +72,5 @@ ul {
   #appContainer .console {
     border: 2px solid #86C9D0;
     border-radius: 4px; }
+  #appContainer .unlocked {
+    box-shadow: 1px 1px 15px #86C9D0; }
