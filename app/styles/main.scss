@@ -6,20 +6,27 @@ body  {
 	color : #86C9D0;
 }
 
-ul{
-	list-style:none;
-}
+
 ::-webkit-scrollbar { 
     display: none; 
 }
 
 #appContainer{
 	margin :15px auto;
+
+	div.console{
+		margin: 10px 0px;
+	}
+
 	#careerTree {
 		height: 25em;
 		overflow-y:scroll;
 		animation : enterLeft 1s;
 
+		ul{
+			list-style:none;
+			float:left;
+		}
 		.rankList{
 			animation : appear 1.5s;
 			animation-delay : 1s;
@@ -38,15 +45,32 @@ ul{
 	}
 	#profile{
 		animation: enterLeft 1s;
-		min-height: 10em;
+		min-height: 20em;
 	}
 	#achievements{
 		animation: enterLeft 1s;
 		animation-delay : 0.5s;
 		min-height: 15em;
+		padding : 0.3em 1.5em;
+		
+		ul{
+			animation : appear 1.5s;
+			animation-delay : 1s;
+		}
+
+		li.achievement{
+			font-size: 10pt;
+		}
+		span.badge{
+			width: 1em;
+			float: left;
+			margin-top: 1px;
+			margin-right: 5px;
+			font-size: 14pt;
+		}
 	}
 	#stats{
-		min-height: 30em;
+		min-height: 20em;
 		animation : enterLeft 1s;
 	}
 

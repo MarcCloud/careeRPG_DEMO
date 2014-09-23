@@ -30,19 +30,21 @@ body {
   background-color: #2F445A;
   color: #86C9D0; }
 
-ul {
-  list-style: none; }
-
 ::-webkit-scrollbar {
   display: none; }
 
 #appContainer {
   margin: 15px auto; }
+  #appContainer div.console {
+    margin: 10px 0px; }
   #appContainer #careerTree {
     height: 25em;
     overflow-y: scroll;
     -webkit-animation: enterLeft 1s;
     animation: enterLeft 1s; }
+    #appContainer #careerTree ul {
+      list-style: none;
+      float: left; }
     #appContainer #careerTree .rankList {
       -webkit-animation: appear 1.5s;
       animation: appear 1.5s;
@@ -58,15 +60,29 @@ ul {
   #appContainer #profile {
     -webkit-animation: enterLeft 1s;
     animation: enterLeft 1s;
-    min-height: 10em; }
+    min-height: 20em; }
   #appContainer #achievements {
     -webkit-animation: enterLeft 1s;
     animation: enterLeft 1s;
     -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
-    min-height: 15em; }
+    min-height: 15em;
+    padding: 0.3em 1.5em; }
+    #appContainer #achievements ul {
+      -webkit-animation: appear 1.5s;
+      animation: appear 1.5s;
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s; }
+    #appContainer #achievements li.achievement {
+      font-size: 10pt; }
+    #appContainer #achievements span.badge {
+      width: 1em;
+      float: left;
+      margin-top: 1px;
+      margin-right: 5px;
+      font-size: 14pt; }
   #appContainer #stats {
-    min-height: 30em;
+    min-height: 20em;
     -webkit-animation: enterLeft 1s;
     animation: enterLeft 1s; }
   #appContainer .console {
