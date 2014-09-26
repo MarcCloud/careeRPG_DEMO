@@ -46,6 +46,25 @@ body  {
 	#profile{
 		animation: enterLeft 1s;
 		min-height: 20em;
+		span{
+			animation: appear 1.5s;
+			animation-delay:1s;
+		}
+		.picture{
+			font-size: 150pt;
+			text-align: center;
+			margin: 20px 0;
+		}
+		.dev-class{
+			font-weight: bold;
+			font-size: 21pt;
+			padding-left: 2%;
+		}
+		div.code-name{
+			font-weight: bold;
+			font-size: 16pt;
+			padding-left: 2%;	
+		}
 	}
 	#achievements{
 		animation: enterLeft 1s;
